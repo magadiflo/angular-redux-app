@@ -13,3 +13,9 @@ Tutorial tomado de [Fernando Herrera (youtube)](https://www.youtube.com/watch?v=
 ```
 npm install @ngrx/store --save
 ```
+
+## [Store DevTools](https://ngrx.io/guide/store-devtools/install)
+- Instalación
+```
+npm install @ngrx/store-devtools --save
+```
