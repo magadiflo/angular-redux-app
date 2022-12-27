@@ -1,1 +1,19 @@
+<div class="row text-center">
+    <div class="col">
+        <h1>Contador</h1>
+        <h2>{{ contador }}</h2>
+    </div>
+</div>
+<div class="row text-center">
+    <div class="col">
+        <button type="button" (click)="incrementar()" class="btn btn-primary">Incrementar</button>
+        <button type="button" (click)="decrementar()" class="btn btn-info">Decrementar</button>
+    </div>
+</div>
+<hr>
+<div class="row text-center">
+    <div class="col">
+        <app-hijo [contador]="contador" (onCambioContador)="contador = $event"></app-hijo>
+    </div>
+</div>
 <router-outlet></router-outlet>
