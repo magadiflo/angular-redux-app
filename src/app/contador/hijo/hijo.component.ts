@@ -21,4 +21,9 @@ export class HijoComponent {
     this.onCambioContador.emit(this.contador);
   }
 
+  resetNieto(nuevoContador: number) {
+    this.contador = nuevoContador;
+    this.onCambioContador.emit(this.contador);
+  }
+
 }
