@@ -4,3 +4,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Redux, NgRx y Angular
 Tutorial tomado de [Fernando Herrera (youtube)](https://www.youtube.com/watch?v=sgFQjRL5niY&list=PLCKuOXG0bPi3FtoplJe0JOpiV6OyK30wd&index=1)
+
+## Página oficial de NGRX
+[ngrx/platform](https://github.com/ngrx/platform)
+[NGRX Reactive State for Angular](https://ngrx.io/)
+
+- Instalación
+```
+npm install @ngrx/store --save
+```
