@@ -19,9 +19,10 @@ export class AppComponent {
 
   constructor(private _store: Store<AppState>) {
     //* this.contador = 10;
-    this._store
-      .subscribe(state => {
-        this.contador = state.contador;
+    this._store.select('contador') //* Le decimos que solo necesitamos estar atentos a una propiedad específica del estado que tenga la aplicación
+      .subscribe(contador => {
+        console.log(contador);
+        this.contador = contador;
       });
   }
 
