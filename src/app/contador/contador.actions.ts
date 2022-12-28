@@ -5,11 +5,27 @@ import { Action } from '@ngrx/store';
 //* llamemos, por ejemplo al incrementar, usemos la constante INCREMENTAR 
 export const INCREMENTAR = '[Contador] Incrementar';
 export const DECREMENTAR = '[Contador] Decrementar';
+export const MULTIPLICAR = '[Contador] Multiplicar';
+export const DIVIDIR = '[Contador] Dividir';
 
 export class IncrementarAction implements Action {
-    readonly type: string = INCREMENTAR;    
+    readonly type: string = INCREMENTAR;
 }
 
 export class DecrementarAction implements Action {
-    readonly type: string = DECREMENTAR;    
+    readonly type: string = DECREMENTAR;
 }
+
+export class MultiplicarAction implements Action {
+    readonly type: string = MULTIPLICAR;
+
+    constructor(public payload: number) { }
+}
+
+export class DividirAction implements Action {
+    readonly type: string = DIVIDIR;
+
+    constructor(public payload: number) { }
+}
+
+export type actions = IncrementarAction | DecrementarAction | MultiplicarAction | DividirAction;
